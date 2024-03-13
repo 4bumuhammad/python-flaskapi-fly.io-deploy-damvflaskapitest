@@ -28,6 +28,12 @@
     ❯ pip install segno
     ❯ pip install uuid0
 
+
+### Reference :
+
+- uuid0 - better timestamped UUIDs in Python --> `https://github.com/bitmario/uuid0`
+
+
 ### &#x1FAB6; code :
 
 - python 
