@@ -56,7 +56,7 @@
             CORS(app)
 
             class AppResource(Resource):
-            
+
                 def generate(_self,_url_logo, _queue_numb, _date_caption):
 
                     uuid = uuid0.generate()
@@ -351,3 +351,36 @@ check and watch for updates on the fly.io console dashboard
 
 
 ---
+
+
+### Notes :
+
+    ❯ pip list
+
+        Package            Version
+        ------------------ --------
+        aniso8601          9.0.1
+        blinker            1.7.0
+        certifi            2024.2.2
+        charset-normalizer 3.3.2
+        click              8.1.7
+        Flask              3.0.2
+        Flask-Cors         4.0.0
+        Flask-RESTful      0.3.10
+        idna               3.6
+        imagekitio         4.0.0
+        itsdangerous       2.1.2
+        Jinja2             3.1.3
+        MarkupSafe         2.1.5
+        pillow             10.2.0
+        pip                22.0.4
+        pybase62           1.0.0
+        pytz               2024.1
+        requests           2.31.0
+        requests-toolbelt  0.10.1
+        segno              1.6.1
+        setuptools         58.1.0
+        six                1.16.0
+        urllib3            1.26.18
+        uuid0              0.2.7
+        Werkzeug           3.0.1
