@@ -29,7 +29,7 @@
     ❯ pip install uuid0
 
 
-### Reference :
+### &#x2B55; Reference :
 
 - uuid0 - better timestamped UUIDs in Python --> `https://github.com/bitmario/uuid0`
 
