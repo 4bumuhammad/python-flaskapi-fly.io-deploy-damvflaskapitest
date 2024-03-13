@@ -19,8 +19,14 @@
 
     ❯ source ./venv/bin/activate
 
-    ❯ pip install flet
-
+    ❯ pip install flask
+    ❯ pip install flask-restful
+    ❯ pip install flask-cors
+    ❯ pip install imagekitio
+    ❯ pip install pillow
+    ❯ pip install requests
+    ❯ pip install segno
+    ❯ pip install uuid0
 
 ### &#x1FAB6; code :
 
