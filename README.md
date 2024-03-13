@@ -13,6 +13,15 @@
 
         0 directories, 5 files
 
+### Begin Project :
+
+    ❯ python -m venv venv
+
+    ❯ source ./venv/bin/activate
+
+    ❯ pip install flet
+
+
 ### &#x1FAB6; code :
 
 - python 
