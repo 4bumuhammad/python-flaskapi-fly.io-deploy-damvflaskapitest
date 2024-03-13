@@ -256,6 +256,23 @@
                 app.run(debug=True, host='0.0.0.0', port=5005)
 
 
+
+### &#x1F31F; Test application in local
+
+    ❯ python3 app.py
+
+        * Serving Flask app 'app'
+        * Debug mode: on
+        WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+        * Running on all addresses (0.0.0.0)
+        * Running on http://127.0.0.1:5005
+        * Running on http://192.168.100.XXX:5005
+        Press CTRL+C to quit
+        * Restarting with stat
+        * Debugger is active!
+        * Debugger PIN: 142-136-969
+
+
 - Dockerfile
 
 
