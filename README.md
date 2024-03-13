@@ -56,6 +56,7 @@
             CORS(app)
 
             class AppResource(Resource):
+            
                 def generate(_self,_url_logo, _queue_numb, _date_caption):
 
                     uuid = uuid0.generate()
