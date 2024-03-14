@@ -407,3 +407,10 @@ check and watch for updates on the fly.io console dashboard
         urllib3            1.26.18
         uuid0              0.2.7
         Werkzeug           3.0.1
+
+
+## [ImageKit]
+
+### Internal Caching
+
+ImageKit.io caches a copy of every transformed and optimized image at the CDN. Additionally, ImageKit.io also maintains its internal caches, which are co-located with its processing engine across 6 global locations. In case any URL is missed by the CDN, internal caches deliver the resources without passing on the request to your server or storage. The same process is followed when you integrate ImageKit.io with a custom CDN.
