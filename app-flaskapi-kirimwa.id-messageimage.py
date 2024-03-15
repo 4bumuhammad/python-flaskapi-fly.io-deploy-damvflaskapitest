@@ -64,24 +64,3 @@ api.add_resource(AppResource, "/api", methods=["POST"])
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5006)
-
-
-
-
-# ❯ curl -X POST http://localhost:5006/api \
-# -H "Content-Type: application/json" \
-# -d '{
-#   "token_kirimwaid": "nilai_token",
-#   "phone_number": "nomor_telepon",
-#   "device_id": "nilai_device_id",
-#   "caption": "teks_caption",
-#   "queue_number": "nomor_antrian",
-#   "date_caption": "tanggal_caption"
-# }'
-    
-
-# curl -X POST http://localhost:5006/api \
-# -H "Content-Type: application/json" \
-# -d '{ \
-#   "token_kirimwaid": "nilai_token" \
-# }'
