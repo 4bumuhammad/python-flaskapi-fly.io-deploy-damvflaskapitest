@@ -166,49 +166,50 @@ class AppResource(Resource):
 
         response = {}
 
-        url_logo = 'https://i.ibb.co/K6BHQJd/output-onlinepngtools-3.png'
-        uuid, img_pil = self.generate(url_logo, _queue_numb, _date_caption)
-        resp_upload = self.upload(img_pil, 'myQRregist')
-        urlImg_upload = resp_upload['url']
-        img_pil.close()
-        print('--> Response ImageKit Upload','raw:',resp_upload)
 
-        url = 'https://api.kirimwa.id/v1/messages'
-        hed = {'Authorization': 'Bearer ' + _token_kwi}
-        data = {"phone_number": _phone_numb, \
-                "message": urlImg_upload, \
-                "device_id": _device_id, \
-                "message_type": "image", \
-                "caption": _caption \
-                }        
+        # url_logo = 'https://i.ibb.co/K6BHQJd/output-onlinepngtools-3.png'
+        # uuid, img_pil = self.generate(url_logo, _queue_numb, _date_caption)
+        # resp_upload = self.upload(img_pil, 'myQRregist')
+        # urlImg_upload = resp_upload['url']
+        # img_pil.close()
+        # print('--> Response ImageKit Upload','raw:',resp_upload)
 
-        try:
-            i = 1
-            tried = True
-            while tried == True:
-                resp_send = requests.post(url, json=data, headers=hed)
-                print('--> i : {0}'.format(str(i)))
-                print('--> Response Send message KirimWA.id -- Code:', resp_send.status_code)
-                print('--> Response Send message KirimWA.id -- Detail:',resp_send.json())
-                if i < 4 and resp_send.status_code != 201 and self.is_url_image(urlImg_upload) == True:
-                    i = i + 1
-                    tried = True
-                else:
-                    tried = False
+        # url = 'https://api.kirimwa.id/v1/messages'
+        # hed = {'Authorization': 'Bearer ' + _token_kwi}
+        # data = {"phone_number": _phone_numb, \
+        #         "message": urlImg_upload, \
+        #         "device_id": _device_id, \
+        #         "message_type": "image", \
+        #         "caption": _caption \
+        #         }        
 
-            response['uuid'] = str(uuid)
-            response['code'] = resp_send.status_code
-            response['detail'] = resp_send.json()            
+        # try:
+        #     i = 1
+        #     tried = True
+        #     while tried == True:
+        #         resp_send = requests.post(url, json=data, headers=hed)
+        #         print('--> i : {0}'.format(str(i)))
+        #         print('--> Response Send message KirimWA.id -- Code:', resp_send.status_code)
+        #         print('--> Response Send message KirimWA.id -- Detail:',resp_send.json())
+        #         if i < 4 and resp_send.status_code != 201 and self.is_url_image(urlImg_upload) == True:
+        #             i = i + 1
+        #             tried = True
+        #         else:
+        #             tried = False
 
-            if resp_send.status_code == 201:
-                delete = self.delete(resp_upload['fileId'])
+        #     response['uuid'] = str(uuid)
+        #     response['code'] = resp_send.status_code
+        #     response['detail'] = resp_send.json()            
 
-        except Exception as er:
-            response["error"] = str(er) 
+        #     if resp_send.status_code == 201:
+        #         delete = self.delete(resp_upload['fileId'])
+
+        # except Exception as er:
+        #     response["error"] = str(er) 
         return response 
 
 # setup resourcenya
 api.add_resource(AppResource, "/api", methods=["GET","POST"])
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5005)
+    app.run(debug=True, host='0.0.0.0', port=5006)
