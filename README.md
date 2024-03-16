@@ -377,8 +377,18 @@ check and watch for updates on the fly.io console dashboard
 </p>
 
 
+&nbsp;
 
 ---
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 
 <p align="center">
     <img src="./gambar-petunjuk/well_done.png" alt="well_done" style="display: block; margin: 0 auto;">
@@ -397,6 +407,7 @@ check and watch for updates on the fly.io console dashboard
     <img src="./gambar-petunjuk/underconstruction-small.png" alt="underconstruction" style="display: block; margin: 0 auto;">
 </p>
 
+&nbsp;
 
 ---
 
