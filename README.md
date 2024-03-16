@@ -373,7 +373,7 @@ check and watch for updates on the fly.io console dashboard
 #### &#x1F535; postman : 
 
 <p align="center">
-    <img src="./gambar-petunjuk/underconstruction.png" alt="underconstruction" style="display: block; margin: 0 auto;">
+    <img src="./gambar-petunjuk/underconstruction-small.png" alt="underconstruction" style="display: block; margin: 0 auto;">
 </p>
 
 
@@ -394,7 +394,7 @@ check and watch for updates on the fly.io console dashboard
 
 
 <p align="center">
-    <img src="./gambar-petunjuk/underconstruction.png" alt="underconstruction" style="display: block; margin: 0 auto;">
+    <img src="./gambar-petunjuk/underconstruction-small.png" alt="underconstruction" style="display: block; margin: 0 auto;">
 </p>
 
 
